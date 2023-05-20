@@ -43,7 +43,7 @@ def password_generator():
     
     passwordLengths = []
 
-    print("Minimum length of password should be 3")
+    print("Minimum length of password should be 3", end="\n\n")
 
     for i in range(numPasswords):
         length = int(input("Enter the length of Password #" + str(i+1) + " "))
@@ -53,7 +53,7 @@ def password_generator():
     
     
     Password = generatePassword(passwordLengths)
-
+    print()
     for i in range(numPasswords):
         print ("Password #"+str(i+1)+" = " + Password[i])
 
